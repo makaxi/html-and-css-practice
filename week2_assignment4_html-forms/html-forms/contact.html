@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Contact Us</title>
+</head>
+<body>
+  <div class="container contact">
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <a href="index.html"><img src="assets/caliteaco_elephant.png" alt="Logo of Cali Tea Co."></a>
+      </div>
+      <div class="top-bar-middle">
+        <!--TODO: Fix it so the menu bar items don't condense right next to each other when the window gets smaller-->
+        <div class="top-bar-middle-item"><a href= "index.html">MENU</a></div>
+        <div class="top-bar-middle-item"><a href= "locations.html">LOCATION</a></div>
+        <div class="top-bar-middle-item"><a href= "contact.html">CONTACT US</a></div>
+      </div>
+      <div class="top-bar-right">
+        <a href="shopping-cart.html"><img src="assets/shopping-cart.png" alt="shopping cart icon"></a>
+      </div>
+    </div>
+    <div class="middle">
+      <div class="contact-form">
+        <div class="contact-form-box">
+          <div class="contact-form-left">
+            <div class="contact-form-title">
+              Get In Touch
+            </div>
+            <hr align="left">
+            <div class="contact-form-info">
+              If you have any questions or comments, please contact us through the form or 
+              email at inquiries@caliteaco.com
+            </div>
+          </div>
+          <div class="contact-form-right">
+            <form action="server.php">
+              <div class="contact-form-right-inputs">
+                <input type="text" name="full-name" value="" placeholder=" Full Name*" required>
+                <input type="text" name="email" value="" placeholder=" Email*" required>
+                Priority: 
+                <select name="priority">
+                  <option value="low" selected>Low Priority</option>
+                  <option value="normal">Normal</option>
+                  <option value="urgent">Urgent</option>
+                </select>
+                <textarea rows="6" name="message" placeholder=" Write Us*" required></textarea>
+              </div>
+              <div class="form-button">
+                <input type="submit" name="submit" value="SEND →">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
